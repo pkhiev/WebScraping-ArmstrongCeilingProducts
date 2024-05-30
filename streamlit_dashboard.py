@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
-import plotly.express as px
+#import plotly.express as px
 
 
 st.set_page_config(
@@ -14,4 +14,7 @@ alt.themes.enable("dark")
 
 df = pd.read_csv('ArmstrongProductList.csv')
 
-print(df)
+# print(df)
+
+st.header("Product Data")
+st.dataframe(df)
