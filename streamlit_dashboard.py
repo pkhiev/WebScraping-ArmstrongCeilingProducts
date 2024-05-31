@@ -89,7 +89,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
 
 st.set_page_config(
-    page_title="Product Data for Armstrong Ceilings!",
+    page_title="Product Data for Armstrong Ceilings",
     page_icon="🏂",
     layout="wide",
     initial_sidebar_state="expanded")
@@ -100,5 +100,5 @@ df = pd.read_csv('ArmstrongProductList.csv')
 
 # print(df)
 
-st.header("Product Data")
+st.header("Product Data!")
 st.dataframe(filter_dataframe(df))
