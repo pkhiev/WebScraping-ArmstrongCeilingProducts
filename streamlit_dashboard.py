@@ -101,7 +101,7 @@ df = pd.read_csv('ArmstrongProductList.csv')
 
 description = """Product data scraped from [Armstrong Ceilings](https://www.armstrongceilings.com/) utilizing Selenium Webdriver + BeautifulSoup"""
 
-image = Image.open('github-icon.png')
+image = Image.open('ceiling_design.png')
 st.sidebar.write(description)
 st.sidebar.write('\n\n\n\n'+'[Github Repository](https://github.com/pkhiev)')
 st.sidebar.image(image, width = 50)
