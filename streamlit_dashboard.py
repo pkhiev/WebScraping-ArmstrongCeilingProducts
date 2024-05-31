@@ -89,7 +89,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
 
 st.set_page_config(
-    page_title="Product Data for Armstrong Ceilings",
+    page_title="Product Data for Armstrong Ceilings!",
     page_icon="🏂",
     layout="wide",
     initial_sidebar_state="expanded")
