@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 import altair as alt
 #import plotly.express as px
 import pandas as pd
@@ -98,7 +99,12 @@ alt.themes.enable("dark")
 
 df = pd.read_csv('ArmstrongProductList.csv')
 
-# print(df)
+description = """Product data scraped from [Armstrong Ceilings](https://www.armstrongceilings.com/)"""
+
+image = Image.open('github-icon.png')
+st.sidebar.write(description)
+st.sidebar.image(image, width = 200)
+st.sidebar.write('[Github Repository](https://github.com/pkhiev)')
 
 st.header("Armstrong Product Data")
 st.dataframe(filter_dataframe(df))
