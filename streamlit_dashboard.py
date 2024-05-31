@@ -83,7 +83,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
                     f"Substring or regex in {column}",
                 )
                 if user_text_input:
-                    df = df[df[column].astype(str).str.contains(user_text_input)]
+                    df = df[df[column].astype(str).str.aslower().contains(user_text_input)]
 
     return df
 
@@ -100,5 +100,5 @@ df = pd.read_csv('ArmstrongProductList.csv')
 
 # print(df)
 
-st.header("Product Data!")
+st.header("Product Data LOL!!!")
 st.dataframe(filter_dataframe(df))
