@@ -103,8 +103,9 @@ description = """Product data scraped from [Armstrong Ceilings](https://www.arms
 
 image = Image.open('ceiling_design.png')
 st.sidebar.write(description)
-st.sidebar.write('\n\n\n\n'+'[Github Repository](https://github.com/pkhiev)')
 st.sidebar.image(image, width = 50)
+st.sidebar.write('\n\n\n\n'+'[Github Repository](https://github.com/pkhiev)')
+
 
 st.header("Armstrong Product Data")
 st.dataframe(filter_dataframe(df))
