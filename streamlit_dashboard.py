@@ -99,12 +99,12 @@ alt.themes.enable("dark")
 
 df = pd.read_csv('ArmstrongProductList.csv')
 
-description = """Product data scraped from [Armstrong Ceilings](https://www.armstrongceilings.com/)"""
+description = """Product data scraped from [Armstrong Ceilings](https://www.armstrongceilings.com/) utilizing Selenium Webdriver + BeautifulSoup"""
 
 image = Image.open('github-icon.png')
 st.sidebar.write(description)
-st.sidebar.image(image, width = 200)
-st.sidebar.write('[Github Repository](https://github.com/pkhiev)')
+st.sidebar.write('\n\n\n\n'+'[Github Repository](https://github.com/pkhiev)')
+st.sidebar.image(image, width = 50)
 
 st.header("Armstrong Product Data")
 st.dataframe(filter_dataframe(df))
